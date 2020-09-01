@@ -1,0 +1,31 @@
+<!-- 通过 CSS3，我们可以在不使用 Flash 动画或 JavaScript 的情况下，当元素从一种样式变换为另一种样式时为元素添加效果。
+请把鼠标移动到下面的元素上： -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            .anim_transition {
+                width: 100px;
+                height: 70px;
+                background-color: green;
+                text-align: center;
+                color: white;
+                border-radius: 5px;
+                transition: all 2s linear;
+            }
+            .anim_transition:hover {
+                width: 150px;
+                height: 105px;
+                -webkit-transform: rotate(360deg);
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <div id="matrixBox" class="anim_transition">css3过度</div>
+
+    </body>
+</html>

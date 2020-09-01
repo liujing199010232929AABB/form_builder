@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script>
+        function getScreen(e) {
+            var x = e.screenX - e.clientX;
+            var y = e.screenY - e.clientY;
+            alert("X坐标：" + x + ",Y坐标：" + y);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="getScreen(event)" value="测试" />
+</body>
+</html>

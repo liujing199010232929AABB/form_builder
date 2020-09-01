@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Document</title>
+
+	<style>
+		*{margin: 0;padding: 0;}
+		.box{
+			border: 1px solid red;
+			position: relative;
+			margin:100px auto;
+			width:200px;
+			height:120px;
+			perspective:400px;/*perspective,属性定义 3D 元素距视图距离 子元素有效果*/
+		}
+		.content{
+			border: 1px solid green;
+			position: absolute;
+			width: 100%; 
+			height: 100%;
+			transform-style: preserve-3d;
+			animation: rotation 15s infinite linear;
+
+		}
+		@keyframes rotation{
+			from{
+				transform: rotateY(0deg);
+			}
+			to{
+				transform: rotateY(360deg);
+			}
+		}
+		.pic{
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			border-radius: 6px;
+			border: 3px solid #f2f2f2 ;
+		}
+		img{
+			width: 200px;
+			height: 100px;
+			border-radius: 5px;
+			border: 3px solid black ;
+		}
+		.content .pic:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+		.content .pic:nth-child(2){transform: rotateY(60deg) translateZ(300px);}
+		.content .pic:nth-child(3){transform: rotateY(120deg) translateZ(300px);}
+		.content .pic:nth-child(4){transform: rotateY(180deg) translateZ(300px);}
+		.content .pic:nth-child(5){transform: rotateY(240deg) translateZ(300px);}
+		.content .pic:nth-child(6){transform: rotateY(300deg) translateZ(300px);}
+
+		.content:hover{
+			animation-play-state: paused;
+		}
+
+	</style>
+
+
+
+
+</head>
+<body>
+	<!-- <a href="网址" title="链接说明"></a>
+	<img src="1.jpg" alt="图片说明"> -->
+	<div class="box">
+		<div class="content">
+			<!-- <div class="pic"><img src="http://www.php.cn/static/images/index_yunv.jpg" alt="1"></div>
+			<div class="pic"><img src="http://img.php.cn/upload/course/000/126/153/5ab346fc62ce4221.jpg" alt="2"></div>
+			<div class="pic"><img src="http://img.php.cn/upload/course/000/000/001/5b63c72c61569244.png" alt="3"></div>
+			<div class="pic"><img src="http://img.php.cn/upload/course/000/171/829/5b19ef2990649817.jpg" alt="4"></div>
+			<div class="pic"><img src="http://img.php.cn/upload/course/000/126/153/5acc118f11d6b969.jpg" alt="5"></div>
+			<div class="pic"><img src="http://img.php.cn/upload/course/000/000/001/5ab862d6bf7f7878.jpg" alt="6"></div> -->
+			
+			<div class="pic"><img src="images/1.jpg" alt="1"></div>
+			<div class="pic"><img src="images/2.jpg" alt="2"></div>
+			<div class="pic"><img src="images/3.jpg" alt="3"></div>
+			<div class="pic"><img src="images/4.jpg" alt="4"></div>
+			<div class="pic"><img src="images/5.jpg" alt="5"></div>
+			<div class="pic"><img src="images/6.jpg" alt="6"></div>
+
+
+		</div>
+	</div>
+
+	
+	
+</body>
+</html>
